@@ -1,0 +1,30 @@
+.button {
+    background-color: rgb(40, 68, 190);
+    opacity: 70%;
+    height: 150px;
+    width: 200px;
+    margin: 2%;
+    border-width: 2px;
+    border-radius: 15px;
+    color: white;
+    transition: transform 0.3s ease-in-out, background-color 0.4s linear;
+
+}
+
+.button:hover {
+    transform: translateY(-4px);
+    background-color: rgb(68, 90, 185);
+}
+
+
+
+.button:focus {
+    /* background-color: red; */
+    animation: clicked 0.3s ease-in-out forwards;
+}
+
+@keyframes clicked {
+    0% { transform: translateY(-4px);}
+    50% { transform: translateY(-10px);}
+    100% { transform: translateY(-4px);}
+}
